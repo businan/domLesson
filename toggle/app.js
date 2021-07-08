@@ -7,10 +7,6 @@ togglePassword.addEventListener("click", function (e) {
         password.getAttribute("type") === "password" ? "text" : "password";
     password.setAttribute("type", type);
     // toggle the eye slash icon
-    // this.classList.toggle("fa-eye-slash");
-    if (!togglePassword.classList.contains("fa-eye-slash")){
-        togglePassword.classList.add("fa-eye-slash")
-    }else{
-        togglePassword.classList.remove("fa-eye-slash")
-    }
+    this.classList.toggle("fa-eye-slash");
+    
 });

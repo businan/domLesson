@@ -705,7 +705,6 @@ To get the element’s width and height that include padding and border, you use
 let box = document.querySelector('div');
 let width = box.offsetWidth;
 let height = box.offsetHeight;
-Code language: JavaScript (javascript)
 ```
 
 The following picture illustrates the offsetWidth and offsetHeight of an element:
