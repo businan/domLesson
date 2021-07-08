@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JavaScript DOM</title>
+    </head>
+    <body>
+        <h1>JavaScript Plus - DOM</h1>
+        <p>getElementsByName() example</p>
+        <p>Please rate the service:</p>
+        <p>
+            <input class="radio-btn" type="radio" name="rate" value="Very poor" /> Very poor
+            <input class="radio-btn" type="radio" name="rate" value="Poor" /> Poor
+            <input class="radio-btn" type="radio" name="rate" value="OK" /> OK
+            <input class="radio-btn" type="radio" name="rate" value="Good" /> Good
+            <input class="radio-btn" type="radio" name="rate" value="Very Good" /> Very Good
+        </p>
+        <p>
+            <button id="btnRate">Submit</button>
+        </p>
+        <script>
+            let btn = document.getElementById("btnRate");
+
+            btn.addEventListener("click", () => {
+                let rates = document.getElementsByName("rate");
+                console.log(rates)
+
+                /* let ratesWithClass = document.getElementsByClassName('radio-btn');
+                console.log(ratesWithClass) */
+
+                rates.forEach((rate) => {
+                    // console.log(rate);
+                    if (rate.checked) {
+                        console.log(`You rated: ${rate.value}`);
+                    }
+                });
+
+                /* for (let i = 0; i < rates.length; i++) {
+                    // console.log(rates[i]);
+                    if (rates[i].type === "radio" && rates[i].checked) {
+                        // get value, set checked flag or do whatever you need to
+                        console.log(rates[i].value);
+                    }
+                } */
+            });
+        </script>
+    </body>
+</html>
