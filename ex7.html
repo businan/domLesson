@@ -7,14 +7,18 @@
       </head>
       <body>
         <h1>JavaScript Plus - DOM</h1>
+        <!-- <div id="divId"></div> -->
         <p>createElement() example</p>
     <script>
+
         let div = document.createElement('div');
         div.id = 'content';
-        div.innerHTML = '<p>CreateElement example using with JavaScript</p>';
+        div.innerHTML = '<h2>CreateElement example using with JavaScript</h2>';
+        
         document.body.appendChild(div);
         // create a new div and set its attributes
         let div2= document.createElement('div');
+        // console.log(typeof div2)
         div2.id = 'content2';
         div2.className = 'note';
         let h2 = document.createElement('h2');
@@ -26,9 +30,11 @@
         div2.appendChild(text);
         // create a new heading and add it to the div
 
-        
+        console.log(div2)
         // add div to the document
+        // const firstDivElement = document.querySelector('#divId');
         document.body.appendChild(div2);
+        // firstDivElement.appendChild(div2);
     </script>
   </body>
 </html>

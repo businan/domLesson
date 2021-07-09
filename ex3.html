@@ -21,24 +21,24 @@
             let btn = document.getElementById("btnRate");
 
             btn.addEventListener("click", () => {
-                let rates = document.getElementsByName("rate");
-                console.log(rates)
+                let inputElements = document.getElementsByName("rate");
+                console.log(inputElements)
 
-                /* let ratesWithClass = document.getElementsByClassName('radio-btn');
-                console.log(ratesWithClass) */
+                /* let inputElementsWithClass = document.getElementsByClassName('radio-btn');
+                console.log(inputElementsWithClass) */
 
-                rates.forEach((rate) => {
-                    // console.log(rate);
+                inputElements.forEach((rate) => {
+                    // console.log(rate.value);
                     if (rate.checked) {
                         console.log(`You rated: ${rate.value}`);
                     }
                 });
 
-                /* for (let i = 0; i < rates.length; i++) {
-                    // console.log(rates[i]);
-                    if (rates[i].type === "radio" && rates[i].checked) {
+                /* for (let i = 0; i < inputElements.length; i++) {
+                    // console.log(inputElements[i]);
+                    if (inputElements[i].type === "radio" && inputElements[i].checked) {
                         // get value, set checked flag or do whatever you need to
-                        console.log(rates[i].value);
+                        console.log(inputElements[i].value);
                     }
                 } */
             });

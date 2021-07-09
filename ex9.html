@@ -18,8 +18,9 @@
         <input type="checkbox" id="chkAccept" checked /> Accept <br /><br />
         <input type="password" id="password" style="color: red; width: 100%" />
         <br /><br />
-        <div id="main" data-progress="pending" data-value="10%"></div>
+        <div id="main" data-progress="pending" data-value="10%" data-custom-attribute="Hello"></div>
         <script>
+
             let input = document.querySelector("#firstName");
             // for standart attributes
             console.log(input.type);
@@ -43,13 +44,16 @@
             console.log(checkbox.checked); // true
 
             let input3 = document.querySelector("#password");
+            input3.style.backgroundColor = 'blue'
 
             let styleAttr = input3.getAttribute("style");
             console.log(styleAttr);
 
             console.dir(input3.style);
-            let divData = document.querySelector("#main");
-            console.log(divData.dataset);
+
+
+            /* let divData = document.querySelector("#main");
+            console.log(divData.dataset.customAttribute); */
         </script>
     </body>
 </html>

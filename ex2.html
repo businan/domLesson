@@ -15,12 +15,12 @@
             <li class="item highlight">JavaScript</li>
             <li class="item">TypeScript</li>
           </ul>
-          <!-- <ul id="menu2">
+          <ul id="menu2">
             <li class="item">HTML</li>
             <li class="item">CSS</li>
             <li class="item highlight">JavaScript</li>
             <li class="item">TypeScript</li>
-          </ul> -->
+          </ul>
         </nav>
         <h1>getElementsByClassName Demo</h1>
       </header>
@@ -39,22 +39,24 @@
       let items = menu.getElementsByClassName('item');
       console.log(items)
 
-      /* let allItems = document.getElementsByClassName('item');
-      console.log(allItems) */
+      let allItems = document.getElementsByClassName('item');
+      console.log(allItems)
 
-      /* let data3 = []
+      let data3 = []
       for (item of items) {
+        console.log(item)
         data3.push(item.textContent)
       }
-      console.log(data3) */
+      console.log(data3)
 
-      let data1 = [].map.call(items, (item) => item.textContent);
+      // let data1 = [].map.call(items, (item) => item.textContent);
 
-      /* let data4 = Array.from(items, (item) => item.textContent);
-      console.log(data4) */
+      let data4 = Array.from(items, (item) => item.textContent);
+      console.log(data4)
 
-      console.log(data1);
+      // console.log(data1);
       console.log('------');
+
       let elements = document.getElementsByClassName('heading-secondary');
 
       let data2 = [].map.call(elements, (elem) => elem.textContent);

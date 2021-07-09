@@ -37,7 +37,7 @@ let logo = document.querySelector('#logo');
 // ! grouping selector
 
 // finds all <div> and <p> elements:
-let elements2 = document.querySelectorAll('div', 'p');
+let elements2 = document.querySelectorAll('div, p');
 // console.log(elements2)
 
 // ! Combinators

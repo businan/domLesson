@@ -39,8 +39,9 @@
       p.style.color = 'red';
       p.style.fontWeight = 'bold';
       let message = document.querySelector('.message');
+      console.log(message.getAttribute('style'))
       let style = getComputedStyle(message);
-
+      console.log(style)
       console.log('color:', style.color);
       console.log('background color:', style.backgroundColor);
       let p2 = document.getElementById('main');

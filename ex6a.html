@@ -5,7 +5,7 @@
         <title>JavaScript Siblings</title>
     </head>
     <body>
-        <ul id="menu">
+        <ul id="menu"> 
             <li>Home</li>
             <li>Products</li>
             <li class="current">Customer Support</li>
@@ -16,7 +16,18 @@
         </ul>
 
         <script>
-            /* let getSiblings = function (currentElement) {
+            /* let content = document.getElementById("menu");
+            console.log(content.firstChild);
+            console.log(content.firstElementChild);
+
+            console.log(content.lastChild);
+            console.log(content.lastElementChild);
+
+            console.log(content.childNodes.length);
+            console.log(content.children.length); */
+
+
+            let getSiblings = function (currentElement) {
                 // for collecting siblings
                 let siblings = [];
                 // if no parent, return no sibling
@@ -25,6 +36,7 @@
                 }
                 // first child of the parent node
                 let sibling = currentElement.parentNode.firstChild;
+                // console.log(currentElement.parentNode.firstChild.length)
                 // collecting siblings
                 while (sibling) {
                     if (sibling.nodeType === 1 && sibling !== currentElement) {
@@ -39,17 +51,9 @@
             let siblings = getSiblings(current);
             // console.log(siblings)
             siblingText = siblings.map((e) => e.innerHTML);
-            console.log(siblingText); */
+            console.log(siblingText);
 
-            /* let content = document.getElementById("menu");
-            console.log(content.firstChild);
-            console.log(content.firstElementChild);
-
-            console.log(content.lastChild);
-            console.log(content.lastElementChild);
-
-            console.log(content.childNodes);
-            console.log(content.children); */
+            
         </script>
     </body>
 </html>
